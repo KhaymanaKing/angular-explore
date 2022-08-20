@@ -12,6 +12,7 @@ import { CoursesService } from './courses.service';
     ` 
 })
 export class CoursesComponent {
+    
     title = "List of courses";
     courses;
    
@@ -19,4 +20,5 @@ export class CoursesComponent {
         let service = new CoursesService;
         this.courses = service.getCourses();
     }
+
 }
